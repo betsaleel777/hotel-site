@@ -4,36 +4,23 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-title text-center">
-            <h2>Hotel Facilities</h2>
+            <h2>Services d'Hôtel</h2>
           </div>
         </div>
       </div>
 
       <div id="tabs">
         <nav class="tabs-nav">
-          <a href="#" class="active" data-tab="tab1">
-            <v-icon class="icon">mdi-food-fork-drink</v-icon>
-            <span>Restaurant</span>
-          </a>
-          <a href="#" data-tab="tab2">
-            <v-icon class="icon">mdi-glass-wine</v-icon>
-            <span>Bar</span>
-          </a>
-          <a href="#" data-tab="tab3">
-            <v-icon class="icon">mdi-smoking</v-icon>
-            <span>Club Cigare</span>
-          </a>
-          <a href="#" data-tab="tab4">
-            <v-icon class="icon">mdi-swim</v-icon>
-            <span>Swimming Pool</span>
-          </a>
-          <a href="#" data-tab="tab5">
-            <v-icon class="icon">mdi-nature-people</v-icon>
-            <span>Spacieux</span>
-          </a>
-          <a href="#" data-tab="tab6">
-            <v-icon class="icon">mdi-home</v-icon>
-            <span>Location Espace</span>
+          <a
+            v-for="(tab, index) in tabs"
+            :key="index"
+            href="#"
+            :class="tab.active ? 'active' : ''"
+            :data-tab="tab.id"
+            @click="selectedService(tab.id, index)"
+          >
+            <v-icon class="icon">{{ tab.icon }}</v-icon>
+            <span>{{ tab.titre }}</span>
           </a>
         </nav>
         <div class="tab-content-container">
@@ -48,8 +35,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Restaurant</h3>
+                  <span class="super-heading-sm">Restaurant</span>
+                  <h3 class="heading">Savourez nos spécialités</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -67,8 +54,8 @@
                     consequatur neque aliquam.
                   </p>
                   <p class="service-hour">
-                    <span>Service Hours</span>
-                    <strong>7:30 AM - 8:00 PM</strong>
+                    <span>Heures de Service</span>
+                    <strong>6:30 - 21:30 </strong>
                   </p>
                 </div>
               </div>
@@ -85,8 +72,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Bars</h3>
+                  <span class="super-heading-sm">Bar</span>
+                  <h3 class="heading">Des boissons exotiques</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -104,8 +91,8 @@
                     consequatur neque aliquam.
                   </p>
                   <p class="service-hour">
-                    <span>Service Hours</span>
-                    <strong>7:30 AM - 8:00 PM</strong>
+                    <span>Heures de Service</span>
+                    <strong>16:00 AM - 00:00 PM</strong>
                   </p>
                 </div>
               </div>
@@ -122,8 +109,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Pick Up</h3>
+                  <span class="super-heading-sm">Club cigare</span>
+                  <h3 class="heading">Détente entre amis</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -141,8 +128,8 @@
                     consequatur neque aliquam.
                   </p>
                   <p class="service-hour">
-                    <span>Service Hours</span>
-                    <strong>7:30 AM - 8:00 PM</strong>
+                    <span>Heures de Service</span>
+                    <strong>24/24</strong>
                   </p>
                 </div>
               </div>
@@ -159,8 +146,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Swimming Pool</h3>
+                  <span class="super-heading-sm">Espace</span>
+                  <h3 class="heading">Profitez de la verdure</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -177,10 +164,10 @@
                     dignissimos molestias temporibus, in! Minima quod,
                     consequatur neque aliquam.
                   </p>
-                  <p class="service-hour">
-                    <span>Service Hours</span>
-                    <strong>7:30 AM - 8:00 PM</strong>
-                  </p>
+                  <!-- <p class="service-hour">
+                    <span>Heures de Service</span>
+                    <strong>8h00 - 21:00 </strong>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -196,8 +183,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Spa</h3>
+                  <span class="super-heading-sm">Piscine</span>
+                  <h3 class="heading">Une piscine raffraichissante</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -214,10 +201,10 @@
                     dignissimos molestias temporibus, in! Minima quod,
                     consequatur neque aliquam.
                   </p>
-                  <p class="service-hour">
-                    <span>Service Hours</span>
+                  <!-- <p class="service-hour">
+                    <span>Heures de Service</span>
                     <strong>7:30 AM - 8:00 PM</strong>
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -233,8 +220,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">World Class</span>
-                  <h3 class="heading">Gym</h3>
+                  <span class="super-heading-sm">Location d'espace</span>
+                  <h3 class="heading">La Résidence vous Appartient</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -251,10 +238,10 @@
                     dignissimos molestias temporibus, in! Minima quod,
                     consequatur neque aliquam.
                   </p>
-                  <p class="service-hour">
-                    <span>Service Hours</span>
+                  <!-- <p class="service-hour">
+                    <span>Heures de Service</span>
                     <strong>7:30 AM - 8:00 PM</strong>
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -265,6 +252,55 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data: () => ({
+    tabs: [
+      {
+        id: 'tab1',
+        titre: 'Restaurant',
+        icon: 'mdi-food-fork-drink',
+        active: true,
+      },
+      {
+        id: 'tab2',
+        titre: 'Bar',
+        icon: 'mdi-glass-wine',
+        active: false,
+      },
+      {
+        id: 'tab3',
+        titre: 'Club Cigare',
+        icon: 'mdi-smoking',
+        active: false,
+      },
+      {
+        id: 'tab4',
+        titre: 'Piscine',
+        icon: 'mdi-swim',
+        active: false,
+      },
+      {
+        id: 'tab5',
+        titre: 'Spacieux',
+        icon: 'mdi-nature-people',
+        active: false,
+      },
+      {
+        id: 'tab6',
+        titre: 'Location Espace',
+        icon: 'mdi-home',
+        active: false,
+      },
+    ],
+  }),
+  methods: {
+    selectedService(id, index) {
+      this.tabs[index].active = true
+      this.tabs.forEach((tab) => {
+        if (tab.id !== id) tab.active = false
+      })
+    },
+  },
+}
 </script>
 <style lang=""></style>

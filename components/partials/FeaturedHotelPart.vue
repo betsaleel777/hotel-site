@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-title text-center">
-            <h2>Featured Hotels</h2>
+            <h2>Nos Suites</h2>
           </div>
         </div>
       </div>
@@ -16,11 +16,11 @@
             style="background-image: url(/images/hotel_feture_1.jpg)"
           >
             <div class="descrip text-center">
-              <p><small>For as low as</small><span>$100/night</span></p>
+              <p><small>A partir de</small><span>10 FCFA/nuitée</span></p>
             </div>
           </div>
           <div class="desc">
-            <h3>Deluxe Hotel</h3>
+            <h3>Hyper Luxe</h3>
             <p>
               Pellentesque habitant morbi tristique senectus et netus ett mauada
               fames ac turpis egestas. Etiam euismod tempor leo, in suscipit
@@ -29,7 +29,7 @@
             </p>
             <p>
               <a href="#" class="btn btn-primary btn-luxe-primary"
-                >Book Now <i class="ti-angle-right"></i
+                >Reserver <i class="ti-angle-right"></i
               ></a>
             </p>
           </div>
@@ -42,11 +42,11 @@
               style="background-image: url(/images/hotel_feture_2.jpg)"
             >
               <div class="descrip text-center">
-                <p><small>For as low as</small><span>$99/night</span></p>
+                <p><small>A partir de</small><span>99 FCFA/nuitée</span></p>
               </div>
             </div>
             <div class="desc">
-              <h3>Hotel Bora</h3>
+              <h3>Luxe</h3>
               <p>
                 Pellentesque habitant morbi tristique senectus et netus ett
                 mauada fames ac turpis egestas. Etiam euismod tempor leo, in
@@ -54,7 +54,7 @@
               </p>
               <p>
                 <a href="#" class="btn btn-primary btn-luxe-primary"
-                  >Book Now <i class="ti-angle-right"></i
+                  >Reserver <i class="ti-angle-right"></i
                 ></a>
               </p>
             </div>
@@ -65,11 +65,11 @@
               style="background-image: url(/images/hotel_feture_3.jpg)"
             >
               <div class="descrip text-center">
-                <p><small>For as low as</small><span>$99/night</span></p>
+                <p><small>A partir de</small><span>99 FCFA/nuitée</span></p>
               </div>
             </div>
             <div class="desc">
-              <h3>D’Morvie</h3>
+              <h3>Princier</h3>
               <p>
                 Pellentesque habitant morbi tristique senectus et netus ett
                 mauada fames ac turpis egestas. Etiam euismod tempor leo, in
@@ -77,7 +77,7 @@
               </p>
               <p>
                 <a href="#" class="btn btn-primary btn-luxe-primary"
-                  >Book Now <i class="ti-angle-right"></i
+                  >Reserver <i class="ti-angle-right"></i
                 ></a>
               </p>
             </div>

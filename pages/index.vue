@@ -5,7 +5,6 @@
     <ReservationFormPart />
     <FeaturedHotelPart />
     <HotelFacilitiesPart />
-    <TestimonialPart />
     <FooterPart />
   </div>
 </template>
@@ -16,7 +15,6 @@ import AsidePart from '~/components/partials/AsidePart.vue'
 import ReservationFormPart from '~/components/partials/ReservationFormPart.vue'
 import FeaturedHotelPart from '~/components/partials/FeaturedHotelPart.vue'
 import HotelFacilitiesPart from '~/components/partials/HotelFacilitiesPart.vue'
-import TestimonialPart from '~/components/partials/TestimonialPart.vue'
 import FooterPart from '~/components/partials/FooterPart.vue'
 export default {
   components: {
@@ -25,7 +23,6 @@ export default {
     ReservationFormPart,
     FeaturedHotelPart,
     HotelFacilitiesPart,
-    TestimonialPart,
     FooterPart,
   },
 }

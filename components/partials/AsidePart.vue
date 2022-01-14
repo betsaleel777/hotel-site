@@ -8,10 +8,10 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Bora Hotel</span></p>
-                  <h2>Reserve Room for Family Vacation</h2>
+                  <p><span>Convivialité</span></p>
+                  <h2>Reserver pour les vacances en famille</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
                   </p>
                 </div>
               </div>
@@ -24,10 +24,10 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Deluxe Hotel</span></p>
-                  <h2>Make Your Vacation Comfortable</h2>
+                  <p><span>Confort</span></p>
+                  <h2>Confortablement à son aise</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
                   </p>
                 </div>
               </div>
@@ -40,10 +40,10 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Luxe Hotel</span></p>
-                  <h2>A Best Place To Enjoy Your Life</h2>
+                  <p><span>Luxe</span></p>
+                  <h2>Le meilleure endroit pour des moments inoubliables</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
                   </p>
                 </div>
               </div>
