@@ -46,13 +46,6 @@
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
-                  </p>
                   <p class="service-hour">
                     <span>Heures de Service</span>
                     <strong>6:30 - 21:30 </strong>
@@ -82,13 +75,6 @@
                     illum dolorem quae facilis reiciendis quas similique totam
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
                   </p>
                   <p class="service-hour">
                     <span>Heures de Service</span>
@@ -120,13 +106,6 @@
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
-                  </p>
                   <p class="service-hour">
                     <span>Heures de Service</span>
                     <strong>24/24</strong>
@@ -146,8 +125,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">Espace</span>
-                  <h3 class="heading">Profitez de la verdure</h3>
+                  <span class="super-heading-sm">Piscine</span>
+                  <h3 class="heading">Une piscine raffraichissante</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -156,13 +135,6 @@
                     illum dolorem quae facilis reiciendis quas similique totam
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
                   </p>
                   <!-- <p class="service-hour">
                     <span>Heures de Service</span>
@@ -183,8 +155,8 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <span class="super-heading-sm">Piscine</span>
-                  <h3 class="heading">Une piscine raffraichissante</h3>
+                  <span class="super-heading-sm">Détente</span>
+                  <h3 class="heading">Relaxez vous</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Molestias officia perferendis modi impedit, rem quasi
@@ -193,13 +165,6 @@
                     illum dolorem quae facilis reiciendis quas similique totam
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
                   </p>
                   <!-- <p class="service-hour">
                     <span>Heures de Service</span>
@@ -230,13 +195,6 @@
                     illum dolorem quae facilis reiciendis quas similique totam
                     sequi ducimus temporibus ex nemo, omnis perferendis earum
                     fugit impedit molestias animi vitae.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laboriosam neque blanditiis eveniet nesciunt, beatae
-                    similique doloribus, ex impedit rem officiis placeat
-                    dignissimos molestias temporibus, in! Minima quod,
-                    consequatur neque aliquam.
                   </p>
                   <!-- <p class="service-hour">
                     <span>Heures de Service</span>
@@ -281,7 +239,7 @@ export default {
       },
       {
         id: 'tab5',
-        titre: 'Spacieux',
+        titre: 'Détente',
         icon: 'mdi-nature-people',
         active: false,
       },
@@ -303,4 +261,4 @@ export default {
   },
 }
 </script>
-<style lang=""></style>
+<style scoped></style>

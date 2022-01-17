@@ -1,5 +1,5 @@
 <template>
-  <div id="featured-hotel" class="fh5co-bg-color">
+  <div id="featured-hotel" class="chambre-hotel-color">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -90,3 +90,11 @@
 <script>
 export default {}
 </script>
+<style scoped>
+.chambre-hotel-color {
+  background-color: #d7ccc8;
+}
+h3 {
+  color: goldenrod;
+}
+</style>

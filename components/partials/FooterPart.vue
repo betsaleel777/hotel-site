@@ -10,12 +10,15 @@
           </span>
           <ul class="contact-info">
             <li>
-              <i class="ti-map"></i
+              <i class="contact-icon ti-map"></i
               ><small>Yamoussoukro quartier millionnaire</small>
             </li>
-            <li><i class="ti-mobile"></i><small>+ 1235 2355 98</small></li>
             <li>
-              <i class="ti-envelope"></i
+              <i class="contact-icon ti-mobile"></i
+              ><small>+ 1235 2355 98</small>
+            </li>
+            <li>
+              <i class="contact-icon ti-envelope"></i
               ><a href="#"><small>info@krinjabo.com</small></a>
             </li>
           </ul>
@@ -25,9 +28,12 @@
             <div class="col-md-3">
               <h3>Menu Krinjabo</h3>
               <ul class="link">
-                <li><a href="#">Nos suites</a></li>
-                <li><a href="#">Services d'hôtel</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                  <a href="#fh5co-header">Acceuil</a>
+                </li>
+                <li><a href="#featured-hotel">Nos suites</a></li>
+                <li><a href="#hotel-facilities">Services d'hôtel</a></li>
+                <li><a href="#footer">Contacts</a></li>
               </ul>
             </div>
             <div class="col-md-3">
@@ -37,7 +43,7 @@
                 <li><a href="#">Club Cigare</a></li>
                 <li><a href="#">Piscine</a></li>
                 <li><a href="#">Spacieux</a></li>
-                <li><a href="#">Location d'espace</a></li>
+                <li><a href="#">Location</a></li>
               </ul>
             </div>
             <div class="col-md-6">
@@ -46,12 +52,16 @@
                 Restez informer sur l'actualité concernant la Résidence Krinjabo
                 Hôtel.
               </p>
-              <form id="form-subscribe" action="#">
-                <div class="form-field">
-                  <input id="email" type="email" placeholder="Email Address" />
-                  <input id="submit" type="submit" value="Send" />
-                </div>
-              </form>
+              <v-form id="form-subscribe">
+                <v-text-field
+                  v-model="message"
+                  append-outer-icon="mdi-send"
+                  clearable
+                  label="Email"
+                  type="email"
+                  @click:append-outer="sendMessage"
+                ></v-text-field>
+              </v-form>
             </div>
           </div>
         </div>
@@ -70,8 +80,9 @@
         <div class="copyright">
           <small
             >&copy; 2022 lovely powered by
+            <v-img height="16px" width="20px" src="/segoor-favi.png"></v-img>
             <!-- mettre icon de segoor ici -->
-            <a href="https://segoor.net" target="_blank">Segoor</a>.
+            <a href="https://segoor.net" target="_blank"> Segoor</a>.
           </small>
         </div>
       </center>
@@ -79,5 +90,26 @@
   </footer>
 </template>
 <script>
-export default {}
+export default {
+  data: () => ({
+    show: false,
+    message: '',
+    marker: true,
+    iconIndex: 0,
+  }),
+  methods: {
+    sendMessage() {
+      // console.log('email envoyé')
+      this.message = ''
+    },
+  },
+}
 </script>
+<style scoped>
+h3 {
+  color: white;
+}
+.contact-icon {
+  color: white;
+}
+</style>

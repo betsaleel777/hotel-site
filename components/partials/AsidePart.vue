@@ -8,7 +8,9 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Convivialité</span></p>
+                  <p>
+                    <span class="mini-title">Convivialité</span>
+                  </p>
                   <h2>Reserver pour les vacances en famille</h2>
                   <p>
                     <a href="#" class="btn btn-primary btn-lg">Reserver</a>
@@ -24,7 +26,7 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Confort</span></p>
+                  <p><span class="mini-title">Confort</span></p>
                   <h2>Confortablement à son aise</h2>
                   <p>
                     <a href="#" class="btn btn-primary btn-lg">Reserver</a>
@@ -40,8 +42,8 @@
             <div class="col-md-12 col-md-offset-0 text-center slider-text">
               <div class="slider-text-inner js-fullheight">
                 <div class="desc">
-                  <p><span>Luxe</span></p>
-                  <h2>Le meilleure endroit pour des moments inoubliables</h2>
+                  <p><span class="mini-title">Luxe</span></p>
+                  <h2>La résidence des moments inoubliables</h2>
                   <p>
                     <a href="#" class="btn btn-primary btn-lg">Reserver</a>
                   </p>
@@ -57,3 +59,8 @@
 <script>
 export default {}
 </script>
+<style scoped>
+.mini-title {
+  color: white;
+}
+</style>
