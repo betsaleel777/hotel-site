@@ -13,7 +13,9 @@
                   </p>
                   <h2>Reserver pour les vacances en famille</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
+                    <a class="btn btn-primary btn-lg" @click="open"
+                      >Réservation</a
+                    >
                   </p>
                 </div>
               </div>
@@ -29,7 +31,9 @@
                   <p><span class="mini-title">Confort</span></p>
                   <h2>Confortablement à son aise</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
+                    <a href="#" class="btn btn-primary btn-lg" @click="open"
+                      >Réservation</a
+                    >
                   </p>
                 </div>
               </div>
@@ -45,7 +49,9 @@
                   <p><span class="mini-title">Luxe</span></p>
                   <h2>La résidence des moments inoubliables</h2>
                   <p>
-                    <a href="#" class="btn btn-primary btn-lg">Reserver</a>
+                    <a href="#" class="btn btn-primary btn-lg" @click="open"
+                      >Réservation</a
+                    >
                   </p>
                 </div>
               </div>
@@ -57,7 +63,13 @@
   </aside>
 </template>
 <script>
-export default {}
+export default {
+  methods: {
+    open() {
+      this.$store.commit('openDialog')
+    },
+  },
+}
 </script>
 <style scoped>
 .mini-title {

@@ -79,7 +79,7 @@
       <center>
         <div class="copyright">
           <small
-            >&copy; 2022 lovely powered by
+            >&copy; {{ new Date().getFullYear() }} lovely powered by
             <v-img height="16px" width="20px" src="/segoor-favi.png"></v-img>
             <!-- mettre icon de segoor ici -->
             <a href="https://segoor.net" target="_blank"> Segoor</a>.

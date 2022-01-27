@@ -1,8 +1,14 @@
 <template>
   <div id="fh5co-wrapper">
     <nuxt />
+    <snackbar-component />
+    <reservation-dialog />
   </div>
 </template>
 <script>
-export default {}
+import SnackbarComponent from '~/components/SnackbarComponent.vue'
+import ReservationDialog from '~/components/ReservationDialog.vue'
+export default {
+  components: { SnackbarComponent, ReservationDialog },
+}
 </script>

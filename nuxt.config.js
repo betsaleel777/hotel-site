@@ -1,4 +1,7 @@
 export default {
+  env: {
+    API: process.env.API || 'http://localhost:8000',
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -85,7 +88,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/notifier.js', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -106,9 +109,11 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: process.env.API, // Can be also an object with default options
+    headers: {
+      'Content-Type': 'application/json',
+    },
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
